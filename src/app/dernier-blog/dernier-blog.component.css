@@ -1,0 +1,57 @@
+
+.debut{
+
+  color: black;
+  width: 100%;
+  height: 90px;
+  background-color: #D0D3D4 ;
+  text-align: center;
+  padding-top: 18px;
+
+}
+
+p{
+  color: black;
+  font-size: 45px;
+  margin-left: 500px;
+
+
+}
+
+button{
+  color: white;
+  background-color: #58D68D;
+  width: 120px;
+  height: 30px;
+  border-color: white;
+  margin-left: 1200px;
+  margin-top: 60px;
+}
+
+.verif{
+
+  margin-left: 545px;
+}
+
+input{
+
+  width: 400px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.ve{
+  width: 400px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.ino{
+  height: 70px;
+}
+
+.is{
+  height: 100px;
+}
+
+

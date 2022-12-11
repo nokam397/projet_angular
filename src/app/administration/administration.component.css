@@ -30,14 +30,53 @@ body {
   margin-top: -90px;
 }
 
-button{
+.bopi{
   color: white;
   background-color: #58D68D;
   width: 120px;
   height: 30px;
   border-color: white;
-  margin-left: 770px;
+  margin-left: 850px;
   margin-top: 60px;
+}
+
+.bop{
+
+  color: white;
+  background-color: #58D68D;
+  width: 120px;
+  height: 30px;
+  border-color: white;
+  margin-left: 600px;
+  margin-top: 60px;
+  margin-top: -200px;
+
+
+}
+
+.de{
+
+ margin-top: -23px;
+}
+
+.di{
+
+margin-top: -10px;
+}
+.bt1{
+  color: white;
+  background-color: #58D68D;
+  width: 120px;
+  height: 30px;
+  border-color: white;
+}
+.bt2{
+
+  color: white;
+  background-color: #58D68D;
+  width: 120px;
+  height: 30px;
+  border-color: white;
 }
 
 .titre{

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin</title>
+
+</head>
+
+<body>
+  <!--certains tests necessitent parfois un rechargement de  la page pour obtenir le resultat fait par NOKAM NOKAM Gael-->
+ <div class="debut">
+
+    <h1>Bloggy</h1>
+
+  </div>
+
+  <div class="titre"><h1>Administration page</h1></div>
+  <div class="di"><button (click)="redirect()" class="bopi">+ Create post</button> </div>
+ <div class="de"> <button class="bop" (click)="redirect7()">latests post</button></div>
+
+
+ <div class="point">
+  <table class="tableau-style">
+   <thead>
+       <tr>
+        <th>ID</th>
+        <th>Image</th>
+        <th>Title</th>
+        <th>Autor</th>
+        <th>Date</th>
+        <th>Action</th>
+
+       </tr>
+
+   </thead>
+
+   <tbody *ngFor="let post of postList">
+
+   <tr>
+    <td>{{post.id}}</td>
+    <td><img [src]="post.image_url"></td>
+    <td>{{post.title}}</td>
+    <td>{{post.author_id}}</td>
+    <td><span>{{post.created_at | date:"dd/MM/yyyy"}}</span></td>
+
+    <td>
+      <button (click)="redirect5(post)" class="bt1"><i class='bx bx-pencil'></i></button>
+      <button class="bt2" (click)="delete_Post(post.id)"><i class='bx bx-trash'></i></button>
+    </td>
+
+   </tr>
+
+  </tbody>
+  </table>
+
+</div>
+
+<button><i class='bx bxs-objects-vertical-center'></i></button>
+
+</body>
+</html>
+

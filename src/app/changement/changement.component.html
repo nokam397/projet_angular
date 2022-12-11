@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+
+</head>
+
+<body>
+
+  <div class="debut">
+
+    <h1>Bloggy</h1>
+
+
+</div>
+  <p>Editing post "My new post"</p>
+  <div *ngIf="error_message.length > 0" style ="color: red;">{{error_message}}</div>
+<form>
+  <div class="verif">
+   <label>Post title</label><br>
+  <input  [(ngModel)]="post.title" type="text" name="title" class="fo" placeholder="post.title"><br>
+  <label for="selection voyage ">Autor</label><br>
+  <select [(ngModel)]="post.author_id" name="author_id" class="ve" (ngModelChange)="onChange($event)" >
+      <option  value="" disabled selected>Sélectionnez</option>
+      <option  *ngFor="let res of authors" value="{{res.id}}"
+      >{{res.full_name}}</option>
+
+
+  </select><br>
+
+  <label>Image</label><br>
+  <input [(ngModel)]="post.image_url" type="text" name="image_url" class="fo" placeholder="post.image_url"><br>
+
+  <label>Post resume</label><br>
+  <textarea [(ngModel)]="post.resume" name="resume" class="ino" placeholder="post.resume"></textarea><br>
+
+  <label>Content</label><br>
+  <textarea [(ngModel)]="post.content" name="content" class="is" rows="7" placeholder="post.content"></textarea><br><br>
+
+<button type="submit" (click)="modifpost()">
+ Save
+</button>
+
+
+
+</div>
+
+</form>
+
+
+
+</body>
+</html>
+
+
+

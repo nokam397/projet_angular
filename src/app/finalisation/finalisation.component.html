@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin</title>
+
+</head>
+
+<body>
+
+  <div class="debut">
+
+    <h1>Bloggy</h1>
+
+  </div>
+
+  <div class="titre"><h1>Our latests post.</h1></div>
+
+
+
+  <table>
+    <tbody *ngFor="let post of postList">
+
+    <tr>
+     <td></td>
+     <td><img [src]="post.image_url">
+
+      <br>{{post.content.substring(1,20)+'.........'}}
+      <br><button class="po" (click)="redirect8(post)">read more..</button>
+      <br>{{post.created_at | date:"dd/MM/yyyy"}}
+
+      <br>
+      <br>
+      <br>
+
+
+
+    </td>
+     <td></td>
+     <td></td>
+     <td><span></span></td>
+
+     </tr>
+
+
+    </tbody>
+
+    </table>
+
+
+
+
+
+
+  </body>
+  </html>
+
